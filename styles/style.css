@@ -17,14 +17,66 @@ header {
     margin-right: auto;
     display: flex;
     align-items: center; 
-    justify-content: center;
+    justify-content: space-between;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
 
+.header_lable {
+    flex: 1; 
+    display: flex;
+    justify-content: center; 
+}
 
 .name {
-    margin: 16px, auto;
+    margin: 0px;
     width: 206px;
     height: 24px;
+}
+
+.save {
+    margin-right: 20px; 
+}
+
+.save_all {
+    width: 86px;
+    height: 40px;
+    padding: 8px 16px;
+    border-radius: 25px;
+    color: #ffffff;
+    background: #12A3F8;
+    border: none;
+}
+
+.save_all:active {
+    background: #12a4f8b2;
+}
+
+.leave {
+    width: 56px;
+    height: 56px;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+.leave:active {
+    background: #d8d8d888;
+    border-bottom-left-radius: 25px;
+}
+
+.humburger {
+    width: 56px;
+    height: 56px;
+    border: none;
+    background: transparent;
+    padding: 0;
+    border-left: 1px solid #a4b5be88;
+    border-right: 1px solid #a4b5be88;
+    cursor: pointer;
+}
+
+.humburger:active {
+    background: #d8d8d888;
 }
