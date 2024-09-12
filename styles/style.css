@@ -57,7 +57,7 @@ header {
     height: 56px;
     border: none;
     background: transparent;
-    padding: 0;
+    padding: 0px;
     cursor: pointer;
 }
 
@@ -71,7 +71,7 @@ header {
     height: 56px;
     border: none;
     background: transparent;
-    padding: 0;
+    padding: 0px;
     border-left: 1px solid #a4b5be88;
     border-right: 1px solid #a4b5be88;
     cursor: pointer;
@@ -79,4 +79,39 @@ header {
 
 .humburger:active {
     background: #d8d8d888;
+}
+
+.undo {
+    width: 56px;
+    height: 56px;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+.undo:active {
+    background: #d8d8d888;
+}
+
+.redo {
+    width: 56px;
+    height: 56px;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+.redo:active {
+    background: #d8d8d888;
+}
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 66px;
+    margin-right: 180px;
 }
