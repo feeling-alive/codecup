@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="fonts/ofont.ru_Avenir Next.ttf">
     <title>Document</title>
 </head>
 <body>
     <header class="header">
         <div class="right_button">
             <button class="leave" id="LeaveButton">
-                <img src="img/lv.png" alt="Leave" />
+                <img src="img/lv.png" alt="Leave">
             </button>
             <button class="humburger" id="list">
                 <img src="img/hm.png" alt="Humburger">
@@ -32,11 +34,68 @@
         </div>
     </header>
 
+
     <main class="main">
-        <div class="canvas">
-            <canvas class="load_img" id="LoadImg" width="1140" height="640"
-            style="border: 1px solid #000;"></canvas>
+        <div class="canvas" id="canvasArea">
+            <button class="add_img" id="img_adding">
+                <img src="img/add.png" alt="Add Image" class="menu-icon">
+            </button>
+            <p class="main_text">Drop file to upload <br> or select file</p>
+            <p class="file_size">5MB Max</p>
+            <canvas class="load_img" id="LoadImg" width="1140" height="640"></canvas>
+            <input type="file" id="fileInput" style="display: none;" accept="image/*">
         </div>
+        <div class="sidebar" id="right_sidebar"></div>
     </main>
+
+    <!-- Выпадающий список -->
+    <div class="dropdown" id="dropdownMenu">
+        <ul>
+            <li>
+                <a href="#option1" class="dropdown-item">
+                    <img src="img/crop.png" alt="Crop" class="menu-icon">
+                    Crop
+                </a>
+            </li>
+            <li>
+                <a href="#option2" class="dropdown-item">
+                    <img src="img/maximize.png" alt="Resize" class="menu-icon">
+                    Resize
+                </a>
+            </li>
+            <li>
+                <a href="#option3" class="dropdown-item">
+                    <img src="img/repeat.png" alt="Rotate and flip" class="menu-icon">
+                    Rotate and flip
+                </a>
+            </li>
+            <li>
+                <a href="#option4" class="dropdown-item">
+                    <img src="img/sliders.png" alt="Adjust" class="menu-icon">
+                    Adjust
+                </a>
+            </li>
+            <hr class="divider">
+            <li>
+                <a href="#option5" class="dropdown-item">
+                    <img src="img/f7_camera-filters.png" alt="Filters" class="menu-icon">
+                    Filters
+                </a>
+            </li>
+            <li>
+                <a href="#option6" class="dropdown-item">
+                    <img src="img/type.png" alt="Text" class="menu-icon">
+                    Text
+                </a>
+            </li>
+            <li>
+                <a href="#option7" class="dropdown-item">
+                    <img src="img/star.png" alt="Decorate" class="menu-icon">
+                    Decorate
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
